@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function result() 
+        {
+            var score=0;
+            if (document.getElementById("gan").checked)
+            {
+                score++;
+            }
+            if (document.getElementById("kl").checked)
+            {
+                score++;
+            }
+            if (document.getElementById("nm").checked)
+            {
+                score++;
+            }
+            if (document.getElementById("pc").checked)
+            {
+                score++;
+            }
+            if (document.getElementById("lt").checked)
+            {
+                score++;
+            }
+            alert("Your score is " + score);
+            if (score>=3)
+            {
+                alert("Good score Keep Moving");
+            }
+            else{
+                alert("practice more to get good score");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form style="background-color:rgb(144, 183, 191)">
+    <h1 align="center"> ADD QUIZ </h1>
+        <label for="name">NAME</label>
+        <input type="text" name="name" id="name" placeholder="name">
+        <label for ="class">CLASS</label>
+        <input type="text" class="class" id=""name" placeholder="class">
+        <div>
+            1.which is longest river in India ?
+            <div>
+            <input type="radio" name="river" id="gan"
+            <label for="gan">Ganga</label>
+            </div>
+            <div>
+            <input type="radio" name="river" id="yam"
+            <label for="yam">Yamuna</label>
+            </div>
+            <div>
+            <input type="radio" name="river" id="brah"
+            <label for="brah">brahmaputra </label>
+            </div>
+            <div>
+            <input type="radio" name="river" id="goda"
+            <label for="goda">godavari</label>
+            </div>
+        </div>
+        <div>
+            2.which India state is famous for the backwater?
+            <div>
+            <input type="radio" name="state" id="kl"
+            <label for="kl">kerala</label>
+            </div>
+            <div>
+            <input type="radio" name="state" id="tn"
+            <label for="tn">tamilnadu</label>
+            </div>
+            <div>
+            <input type="radio" name="state" id="ka"
+            <label for="ka">karanataka</label>
+            </div>
+            <div>
+            <input type="radio" name="state" id="go"
+            <label for="go">goa</label>
+            </div>
+        </div>
+        <div>
+            3.National tree of India?
+            <div>
+            <input type="radio" name="tree" id="nm"
+            <label for="nm">neem</label>
+            </div>
+            <div>
+            <input type="radio" name="tree" id="bn"
+            <label for="bn">banyan</label>
+            </div>
+            <div>
+            <input type="radio" name="tree" id="cn"
+            <label for="cn">coconut tree</label>
+            </div>
+            <div>
+            <input type="radio" name="tree" id="mn"
+            <label for="mn">mango</label>
+            </div>
+        </div>
+        <div>
+            4.which is national bird of India?
+            <div>
+            <input type="radio" name="bird" id="pc"
+            <label for="pc">peacock</label>
+            </div>
+            <div>
+            <input type="radio" name="bird" id="cr"
+            <label for="cr">crow</label>
+            </div>
+            <div>
+            <input type="radio" name="bird" id="bt"
+            <label for="bt">bat</label>
+            </div>
+            <div>
+            <input type="radio" name="bird" id="dv"
+            <label for="dv">dove</label>
+            </div>
+        </div>
+        <div>
+            5.which is national flower of India?
+            <div>
+            <input type="radio" name="flower" id="ll"
+            <label for="ll">lily</label>
+            </div>
+            <div>
+            <input type="radio" name="flower" id="jas"
+            <label for="jas">jasmine</label>
+            </div>
+            <div>
+            <input type="radio" name="flower" id="rs"
+            <label for="rs">rose</label>
+            </div>
+            <div>
+            <input type="radio" name="flower" id="lt"
+            <label for="lt">lotus</label>
+            </div>
+        </div>
+        <button type="submit" name="submit" id="submit" height="20" onclick="result()">submit</button>
+        
+        </form>
+</body>
+</html>
